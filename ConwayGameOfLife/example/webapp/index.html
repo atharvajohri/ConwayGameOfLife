@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Conway's Game of Life: Implementation in JS</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/life.css">
+		
+		<script type="text/javascript" src="js/frameworks/jquery.min.js"></script>
+		<script type="text/javascript" src="js/controllers/life.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#life-container").life({
+					scale: 60,
+					cellFillStyle: 'blue'
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="main-container">
+			<div id="life-container"></div>
+		</div>
+	</body>
+</html>
